@@ -37,6 +37,7 @@ public class MembresiaTest {
 		assertEquals(bEsperado, bReal, 0);
 
 	}
+
 	/*
 	 * Probando funcion con dos puntos
 	 */
@@ -52,51 +53,52 @@ public class MembresiaTest {
 		assertEquals(bEsperado, bReal, 0);
 
 	}
+
 	/*
 	 * Probando funcion con dos puntos
 	 */
 	@Test
-	public void testMembresiaF()
-	{
+	public void testMembresiaF() {
 		Punto a = new Punto(80, 0);
 		Punto b = new Punto(90, 1);
 		Membresia f = new Membresia();
-		
-		double membReal =  f.f(85, a, b);
+
+		double membReal = f.f(85, a, b);
 		double membEsperada = 0.5;
-		
-		assertEquals(membEsperada, membReal,0);
+
+		assertEquals(membEsperada, membReal, 0);
 	}
+
 	/*
 	 * Probando funcion con dos puntos
 	 */
 	@Test
-	public void testMembresiaFCaso2()
-	{
+	public void testMembresiaFCaso2() {
 		Punto a = new Punto(90, 1);
 		Punto b = new Punto(100, 0);
 		Membresia f = new Membresia();
-		
-		double membReal =  f.f(95, a, b);
+
+		double membReal = f.f(95, a, b);
 		double membEsperada = 0.5;
-		
-		assertEquals(membEsperada, membReal,0);
+
+		assertEquals(membEsperada, membReal, 0);
 	}
+
 	/*
 	 * Probando funcion con dos puntos
 	 */
 	@Test
-	public void testMembresiaFCaso3()
-	{
+	public void testMembresiaFCaso3() {
 		Punto a = new Punto(80, 0);
 		Punto b = new Punto(90, 1);
 		Membresia f = new Membresia();
-		
-		double membReal =  f.f(90, a, b);
+
+		double membReal = f.f(90, a, b);
 		double membEsperada = 1;
-		
-		assertEquals(membEsperada, membReal,0);
+
+		assertEquals(membEsperada, membReal, 0);
 	}
+
 	/*
 	 * Caso solo dos puntos
 	 */
@@ -106,13 +108,14 @@ public class MembresiaTest {
 		puntos.add(new Punto(80, 0));
 		puntos.add(new Punto(85, 1));
 		Funcion f = new Funcion(puntos);
-		
+
 		Membresia m = new Membresia();
 		double mReal = m.calcMembresia(85, f);
 		double mEsperado = 1;
-		
-		assertEquals(mEsperado, mReal,0);
+
+		assertEquals(mEsperado, mReal, 0);
 	}
+
 	/*
 	 * Caso Resutlados
 	 */
@@ -123,13 +126,14 @@ public class MembresiaTest {
 		puntos.add(new Punto(85, 1));
 		puntos.add(new Punto(100, 1));
 		Funcion f = new Funcion(puntos);
-		
+
 		Membresia m = new Membresia();
 		double mReal = m.calcMembresia(90, f);
 		double mEsperado = 1;
-		
-		assertEquals(mEsperado, mReal,0);
+
+		assertEquals(mEsperado, mReal, 0);
 	}
+
 	/*
 	 * Caso Estrategias de trabajo
 	 */
@@ -140,12 +144,12 @@ public class MembresiaTest {
 		puntos.add(new Punto(90, 1));
 		puntos.add(new Punto(100, 0));
 		Funcion f = new Funcion(puntos);
-		
+
 		Membresia m = new Membresia();
 		double mReal = m.calcMembresia(85, f);
 		double mEsperado = 0.5;
-		
-		assertEquals(mEsperado, mReal,0);
+
+		assertEquals(mEsperado, mReal, 0);
 	}
-	
+
 }
