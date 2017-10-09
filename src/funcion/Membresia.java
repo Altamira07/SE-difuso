@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Membresia {
 	
-	Funcion funMembresia;
+	private Funcion funMembresia;
 	
 	public Membresia()
 	{
@@ -32,6 +32,8 @@ public class Membresia {
 		return 0;
 	}
 	
+	
+
 	public double calcMembresia (double x, Funcion funMembresia)
 	{
 		this.funMembresia = funMembresia;
@@ -53,5 +55,13 @@ public class Membresia {
 		return x.getY() - (m*x.getX());
 	}
 	
+	
+	public Funcion getFunMembresia() {
+		return funMembresia;
+	}
+
+	public void setFunMembresia(Funcion funMembresia) {
+		this.funMembresia = funMembresia;
+	}
 
 }

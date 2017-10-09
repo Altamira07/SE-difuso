@@ -21,4 +21,8 @@ public class Punto
 	public void setY(double y) {
 		this.y = y;
 	}
+	public Punto(double x) {
+		super();
+		this.x = x;
+	}
 }

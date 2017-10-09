@@ -30,7 +30,6 @@ public class MembresiaTest {
 	public void testB() {
 		Punto a = new Punto(80, 0);
 		Membresia f = new Membresia();
-		double m = 0.1;
 
 		double bEsperado = -8;
 		double bReal = f.calcB(a, 0.1);
@@ -38,7 +37,9 @@ public class MembresiaTest {
 		assertEquals(bEsperado, bReal, 0);
 
 	}
-
+	/*
+	 * Probando funcion con dos puntos
+	 */
 	@Test
 	public void testBCaso2() {
 		Punto b = new Punto(90, 1);
@@ -51,7 +52,9 @@ public class MembresiaTest {
 		assertEquals(bEsperado, bReal, 0);
 
 	}
-	
+	/*
+	 * Probando funcion con dos puntos
+	 */
 	@Test
 	public void testMembresiaF()
 	{
@@ -64,7 +67,9 @@ public class MembresiaTest {
 		
 		assertEquals(membEsperada, membReal,0);
 	}
-	
+	/*
+	 * Probando funcion con dos puntos
+	 */
 	@Test
 	public void testMembresiaFCaso2()
 	{
@@ -77,7 +82,9 @@ public class MembresiaTest {
 		
 		assertEquals(membEsperada, membReal,0);
 	}
-	
+	/*
+	 * Probando funcion con dos puntos
+	 */
 	@Test
 	public void testMembresiaFCaso3()
 	{
@@ -90,7 +97,9 @@ public class MembresiaTest {
 		
 		assertEquals(membEsperada, membReal,0);
 	}
-	
+	/*
+	 * Caso solo dos puntos
+	 */
 	@Test
 	public void testMembresia() {
 		ArrayList<Punto> puntos = new ArrayList<>();
